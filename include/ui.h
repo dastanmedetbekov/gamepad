@@ -3,10 +3,10 @@
 
 enum Screen {
   MAIN_SCREEN,
-  WIFI_MENU
+  MENU_SCREEN
 };
 
-void initDisplay();
+void initUI();
 void drawUI();
 void setScreen(Screen s);
 
