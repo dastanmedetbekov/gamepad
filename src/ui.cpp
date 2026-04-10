@@ -17,8 +17,10 @@ int menuIndex = 0;
 // ===== INIT =====
 void initUI() {
   Wire.begin(D2, D1);
-  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3C); 
   display.clearDisplay();
+  display.setTextColor(SSD1306_WHITE);
+  display.display();
 }
 
 // ===== API =====
